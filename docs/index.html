@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/eventos.js"></script>
+    <title>Gasto Semanal</title>
+</head>
+<body>
+    <div class="container">
+        <header class="text-center">
+            <h1>Gasto semanal</h1>
+        </header>
+        <section class="contenido-principal">
+            <div class="row">
+                <div class="contenido primario">
+                    <h2 class="text-center">Añade tus gastos</h2>
+                    <form action="#" id="agregar-gasto">
+                        <div class="form-group">
+                            <label for="gasto"></label>
+                            <input type="text" class="form-control" id="gasto" placeholder="Nombre gasto">
+                        </div>
+                        <div class="form-group">
+                            <label for="cantidad"></label>
+                            <input type="text" class="form-control" id="cantidad" placeholder="Ingrese cantidad">
+                        </div>
+                        <button type="submit" >Agregar</button>
+                    </form>
+                </div>
+                <div class="contenido segundario">
+                    <h2 class="text-center">Listado</h2>
+                    <div id="gastos">
+                        <ul class="list-group">
+
+                        </ul>
+                    </div>
+                    <div id="presupuesto">
+                        <div class="alert alert-primary">
+                            <p>presupuesto: $ <span id="total"></span></p>
+                        </div>
+                        <div class="restante alert alert-success">
+                            <p>Restante: $ <span id="restante"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
