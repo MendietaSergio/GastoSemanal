@@ -1,0 +1,108 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-image: linear-gradient(267deg, #f43b47 0%, #453a94 100%);
+   
+}
+  
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+}
+li{
+    display: inline-block;
+}
+  
+header.text-center{
+    font-weight: 300;
+    text-align: center;
+}
+header h1{
+    margin: 30px;
+    font-weight: normal;
+}
+section .container{
+    background-color: rgb(255, 255, 255,.6);
+    width: 85%;
+    margin: 22px;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 23px;
+    height: auto;
+  }
+section h2{
+    color: #fff;
+    text-align: center;
+    margin: 0;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+section label{
+    float: left;
+}
+section input, button{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+}
+section #presupuesto{
+    font-weight: bold;
+    border-radius: 20px;
+    background-color: rgb(4, 0, 236,.3);
+    margin-top: 20px;
+}
+section .caja-restante{
+    font-weight: bold;
+}
+section #presupuesto span,p{
+    text-align: center;
+}
+section #restante span{
+    text-align: center;
+}
+section .segundario h2{
+    margin-top: 20px;
+}
+section #gastos{
+    margin-top: 20px;
+}
+section .badge{
+    background-color: blue;
+}
+section .contenido-principal{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-gap:20px;
+}
+@media(min-width: 768px){
+    section .container{
+        grid-template-columns:repeat(3,1fr);
+    }
+    header h1{
+        margin: 0px;
+        margin-top: 30px;
+    }
+    section .container{
+        width: 500px;
+        margin: 94px;
+    }
+}
+@media(min-width: 1024px){
+    section .container{
+        width: 80%;
+        grid-template-columns:repeat(2,1fr);
+    }
+    section .primario{
+        width: 50%;
+    }
+    section .secundario{
+        width: 50%;
+    }
+}
